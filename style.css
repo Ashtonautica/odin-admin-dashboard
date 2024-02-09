@@ -122,6 +122,21 @@ body {
 
 .sidebar div {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 20px;
+}
+
+svg {
+    fill: white;
 }
 
 .main { 
