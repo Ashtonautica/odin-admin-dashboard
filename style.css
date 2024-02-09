@@ -119,5 +119,10 @@ body {
 }
 
 .main { 
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
 
+.projects {
+    grid-row: 1 / 3;
 }
