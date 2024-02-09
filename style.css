@@ -137,6 +137,10 @@ body {
     justify-self: center;
 }
 
+.sidebar svg:nth-child(8) {
+    transform: scaleX(-1);
+}
+
 .sidebar div {
     padding: 20px;
     display: grid;
