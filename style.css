@@ -127,6 +127,7 @@ body {
 .main { 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 20px;
     gap: 20px;
 }
@@ -141,13 +142,36 @@ body {
 .cards{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .card {
     background-color: var(--color-surface-200);
+    padding: 20px;
 }
 
 .card p {
     color: var(--color-surface-600);
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.announcements .card, .trending .card {
+    display: grid;
+    align-items: center;
+}
+
+.user {
+    display: grid;
+    grid-template: min-content min-content / auto 1fr;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.user .image {
+    grid-row: 1 / 3;
 }
